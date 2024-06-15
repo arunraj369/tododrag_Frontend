@@ -3,7 +3,7 @@ import TasksContainer from "./TasksContainer.js";
 import Nav from "./Nav.js";
 import socketIO from "socket.io-client";
 
-const socket = socketIO.connect("http://localhost:5000");
+const socket = socketIO.connect("https://tododrag-backend-2.onrender.com/");
 
 const Task = () => {
   return (
