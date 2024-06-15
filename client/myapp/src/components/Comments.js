@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import socketIO from "socket.io-client";
 import { useParams } from "react-router-dom";
 
-const socket = socketIO.connect("http://localhost:5000");
+const socket = socketIO.connect("https://tododrag-backend-2.onrender.com/");
 
 const Comments = () => {
   const { category, id } = useParams();
