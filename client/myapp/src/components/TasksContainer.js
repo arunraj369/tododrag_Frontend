@@ -37,7 +37,7 @@ const TasksContainer = ({ socket }) => {
 
   return (
     <div className="container">
-      {console.log("rendering")}
+      {/* {console.log("rendering")} */}
       {/* DragDropContext enables drag and drop functionality within its context. */}
       <DragDropContext onDragEnd={handleDragEnd}>
         {/* map data from task */}
@@ -62,11 +62,16 @@ const TasksContainer = ({ socket }) => {
                       >
                         {(provided) => (
                           <div
+                            className={`${task[1].title.toLowerCase()}__items`}
                             ref={provided.innerRef}
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
-                            className={`${task[1].title.toLowerCase()}__items`}
                           >
+                            <h4
+                              className={`${task[1].title.toLowerCase()}__items1`}
+                            >
+                              status
+                            </h4>
                             <p>{item.title}</p>
                             <p className="comment">
                               <Link
