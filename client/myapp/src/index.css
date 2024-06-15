@@ -79,7 +79,7 @@ body {
   background-color: white;
 }
 .pending__items1 {
-  background-color: #e33711;
+  background-color: red;
   width: 20%;
   border-radius: 10%;
 }
@@ -183,4 +183,47 @@ body {
   font-size: 16px;
   outline: none;
   width: 200px;
+}
+.container {
+  padding: 20px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions .comment-link,
+.actions .edit-icon-container,
+.actions .delete-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.comment-icon,
+.edit-icon,
+.delete-icon {
+  margin-right: 5px;
+}
+
+.comment-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.edit-icon-container,
+.delete-icon-container {
+  color: #007bff;
+}
+
+.edit-icon-container:hover,
+.delete-icon-container:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin-top: 10px;
 }
