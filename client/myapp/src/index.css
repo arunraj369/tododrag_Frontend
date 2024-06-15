@@ -9,16 +9,18 @@ a {
 body {
   margin: 0;
   padding: 0;
+  background-color: whitesmoke;
 }
 .navbar {
   width: 100%;
-  background-color: #e1eef3;
+  background-color: black;
   height: 10vh;
   border-bottom: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  color: white;
 }
 .form__input {
   min-height: 20vh;
@@ -66,13 +68,30 @@ body {
   text-transform: capitalize;
 }
 .pending__items {
-  background-color: #f3d0c8;
+  background-color: white;
+  border-radius: 5%;
+  width: 80%;
 }
 .ongoing__items {
-  background-color: #d4eef5;
+  background-color: white;
 }
 .completed__items {
-  background-color: #83dad7;
+  background-color: white;
+}
+.pending__items1 {
+  background-color: #e33711;
+  width: 20%;
+  border-radius: 10%;
+}
+.ongoing__items1 {
+  background-color: #fafe08;
+  width: 20%;
+  border-radius: 10%;
+}
+.completed__items1 {
+  background-color: #03dd12;
+  width: 20%;
+  border-radius: 10%;
 }
 .pending__container,
 .ongoing__container,
