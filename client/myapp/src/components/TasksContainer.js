@@ -7,7 +7,7 @@ const TasksContainer = ({ socket }) => {
 
   useEffect(() => {
     function fetchTasks() {
-      fetch("http://localhost:5000/api")
+      fetch("https://tododrag-backend-2.onrender.com/api")
         .then((res) => res.json())
         .then((data) => setTasks(data)); // intialy data store in state
     }
